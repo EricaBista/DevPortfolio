@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
 	end
+
+  def copyright_generator
+    IconicViewTool::Renderer.copyright 'Erica Bista', 'All right reserved'
+  end
 end
